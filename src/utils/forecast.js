@@ -18,9 +18,11 @@ const forecast = (latitude, longitude, callback) => {
 				body.current.weather_descriptions[0] +
 					'. It is currently ' +
 					body.current.temperature +
-					' degrees out. There is a ' +
+					' degrees out. The humidity is ' +
+					body.current.humidity +
+					'% and the chances of rain are ' +
 					body.current.precip +
-					'% chance of rain.'
+					'%.'
 			);
 		}
 	});
